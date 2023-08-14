@@ -185,12 +185,15 @@ $primary2-color: #7debcd;
 
   .images {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 30px;
 
     .image {
+      text-align: center;
+
       img {
-        width: 150px;
+        width: 75px;
+        border-radius: 5px;
       }
     }
   }
@@ -202,7 +205,15 @@ $primary2-color: #7debcd;
 
     .images {
       grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-      gap: 20px;
+      gap: 10px;
+
+      .image {
+        text-align: center;
+
+        img {
+          width: 75px;
+        }
+      }
     }
   }
 }

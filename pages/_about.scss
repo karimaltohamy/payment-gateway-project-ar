@@ -1,0 +1,140 @@
+$primary-color: #877afd;
+$primary2-color: #7debcd;
+
+// start our_story
+.our_story {
+  padding: 80px 0;
+
+  .line {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    > div {
+      width: 50%;
+    }
+
+    .text {
+      .subtitle {
+        color: $primary2-color;
+        font-size: 17px;
+      }
+
+      .title {
+        font-size: 35px;
+        font-weight: 700;
+      }
+
+      .desc {
+        line-height: 1.7;
+      }
+    }
+
+    .image {
+      text-align: center;
+      background-color: #b6b0f5;
+      border-radius: 10px;
+
+      img {
+        width: 50%;
+        transform: translateY(45px) rotate(13deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .our_story {
+    padding: 40px 0 60px;
+
+    .line {
+      flex-direction: column;
+      gap: 30px;
+
+      > div {
+        width: 100%;
+      }
+
+      .text {
+        text-align: center;
+        .subtitle {
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+
+        .title {
+          font-size: 25px;
+        }
+
+        .desc {
+          font-size: 13px;
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+// end our_story
+
+// start boxs_about
+.boxs_about {
+  padding: 80px 0;
+
+  .boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+
+    .box {
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      background-color: #0d0b23;
+
+      .icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 10px;
+        background-image: linear-gradient(
+          180deg,
+          $primary-color 0%,
+          $primary2-color
+        );
+
+        img {
+          width: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .boxs_about {
+    padding: 40px 0;
+
+    .boxs {
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 20px;
+
+      .box {
+        padding: 25px;
+
+        .icon {
+          width: 65px;
+          height: 65px;
+
+          img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+// end boxs_about

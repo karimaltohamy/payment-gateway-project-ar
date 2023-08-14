@@ -248,6 +248,59 @@ header {
 }
 // end header
 
+// start head_page
+.head_page {
+  background-image: url(../images/anothermorphline.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .head_title_page {
+    height: 250px;
+
+    .container {
+      height: 100%;
+    }
+
+    .content {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h4 {
+        font-size: 40px;
+        color: $primary-color;
+        font-weight: 600;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .head_page {
+    .head_title_page {
+      height: 200px;
+
+      .content {
+        text-align: center;
+        h4 {
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+// end head_page
+
 // start menu_mobile
 
 .overflow {

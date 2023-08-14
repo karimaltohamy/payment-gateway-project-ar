@@ -228,6 +228,54 @@ header .container .btn_menu {
     width: 35px;
   }
 }
+.head_page {
+  background-image: url(../images/anothermorphline.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.head_page .head_title_page {
+  height: 250px;
+}
+.head_page .head_title_page .container {
+  height: 100%;
+}
+.head_page .head_title_page .content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.head_page .head_title_page .content h4 {
+  font-size: 40px;
+  color: #877afd;
+  font-weight: 600;
+}
+.head_page .head_title_page .content p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .head_page .head_title_page {
+    height: 200px;
+  }
+  .head_page .head_title_page .content {
+    text-align: center;
+  }
+  .head_page .head_title_page .content h4 {
+    font-size: 22px;
+  }
+  .head_page .head_title_page .content p {
+    font-size: 15px;
+  }
+}
 .overflow {
   position: fixed;
   top: 0;
@@ -721,11 +769,15 @@ footer .footer_bottom p {
 .brands .images {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: 30px;
 }
+.brands .images .image {
+  text-align: center;
+}
 .brands .images .image img {
-  width: 150px;
+  width: 75px;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -734,7 +786,13 @@ footer .footer_bottom p {
   }
   .brands .images {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 20px;
+    gap: 10px;
+  }
+  .brands .images .image {
+    text-align: center;
+  }
+  .brands .images .image img {
+    width: 75px;
   }
 }
 .how_it_works {
@@ -1369,6 +1427,295 @@ footer .footer_bottom p {
   }
   .sign_section .content form .input_item label {
     margin-bottom: 3px;
+  }
+}
+.our_story {
+  padding: 80px 0;
+}
+.our_story .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+.our_story .line > div {
+  width: 50%;
+}
+.our_story .line .text .subtitle {
+  color: #7debcd;
+  font-size: 17px;
+}
+.our_story .line .text .title {
+  font-size: 35px;
+  font-weight: 700;
+}
+.our_story .line .text .desc {
+  line-height: 1.7;
+}
+.our_story .line .image {
+  text-align: center;
+  background-color: #b6b0f5;
+  border-radius: 10px;
+}
+.our_story .line .image img {
+  width: 50%;
+  -webkit-transform: translateY(45px) rotate(13deg);
+          transform: translateY(45px) rotate(13deg);
+}
+
+@media (max-width: 768px) {
+  .our_story {
+    padding: 40px 0 60px;
+  }
+  .our_story .line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .our_story .line > div {
+    width: 100%;
+  }
+  .our_story .line .text {
+    text-align: center;
+  }
+  .our_story .line .text .subtitle {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .our_story .line .text .title {
+    font-size: 25px;
+  }
+  .our_story .line .text .desc {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+}
+.boxs_about {
+  padding: 80px 0;
+}
+.boxs_about .boxs {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+.boxs_about .boxs .box {
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #0d0b23;
+}
+.boxs_about .boxs .box .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#877afd), to(#7debcd));
+  background-image: linear-gradient(180deg, #877afd 0%, #7debcd);
+}
+.boxs_about .boxs .box .icon img {
+  width: 35px;
+}
+
+@media (max-width: 768px) {
+  .boxs_about {
+    padding: 40px 0;
+  }
+  .boxs_about .boxs {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+  }
+  .boxs_about .boxs .box {
+    padding: 25px;
+  }
+  .boxs_about .boxs .box .icon {
+    width: 65px;
+    height: 65px;
+  }
+  .boxs_about .boxs .box .icon img {
+    width: 30px;
+  }
+}
+.boxs_contact {
+  padding: 70px 0;
+  background-color: white;
+  color: black;
+}
+.boxs_contact .boxs {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+.boxs_contact .boxs .box {
+  padding: 60px 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px 13px rgb(233, 233, 233);
+          box-shadow: 0 6px 13px rgb(233, 233, 233);
+  text-align: center;
+}
+.boxs_contact .boxs .box .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(45deg, #8785f1 0%, #877afd 100%);
+  margin: auto;
+  margin-bottom: 15px;
+}
+.boxs_contact .boxs .box .icon svg {
+  width: 32px;
+  color: white;
+}
+.boxs_contact .boxs .box h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.boxs_contact .boxs .box p {
+  color: gray;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .boxs_contact {
+    padding: 40px 0;
+  }
+  .boxs_contact .boxs {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+  }
+  .boxs_contact .boxs .box {
+    padding: 40px 30px;
+  }
+  .boxs_contact .boxs .box h4 {
+    font-size: 19px;
+    margin-bottom: 5px;
+  }
+  .boxs_contact .boxs .box p {
+    font-size: 14px;
+  }
+}
+.contact_page {
+  padding: 80px 0;
+  background-color: white;
+  color: black;
+}
+.contact_page .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.contact_page .line > div {
+  width: 50%;
+}
+.contact_page .line .left .title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.contact_page .line .left .desc {
+  color: gray;
+  margin-bottom: 0;
+}
+.contact_page .line .left form {
+  margin-top: 50px;
+}
+.contact_page .line .left form .input_item {
+  margin-bottom: 20px;
+}
+.contact_page .line .left form .input_item label {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.contact_page .line .left form .input_item input,
+.contact_page .line .left form .input_item textarea {
+  width: 100%;
+  outline: none;
+  padding: 8px;
+  border: 1px solid rgb(219, 227, 234);
+  border-radius: 5px;
+}
+.contact_page .line .left form .input_item input:focus,
+.contact_page .line .left form .input_item textarea:focus {
+  border: 1px solid #877afd;
+}
+.contact_page .line .left form .input_item textarea {
+  height: 200px;
+}
+.contact_page .line .left form .btn_submit {
+  background: linear-gradient(45deg, #8785f1 0%, #5a57f6 100%);
+  color: white !important;
+  padding: 9px 30px;
+  border-radius: 3px;
+  border: none;
+}
+.contact_page .line .right .image img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact_page {
+    padding: 30px 0;
+  }
+  .contact_page .line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact_page .line > div {
+    width: 100%;
+  }
+  .contact_page .line .left .title {
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 3px;
+  }
+  .contact_page .line .left .desc {
+    font-size: 13px;
+    text-align: center;
+  }
+  .contact_page .line .left form .input_item {
+    margin-bottom: 12px;
+  }
+  .contact_page .line .left form .input_item label {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  .contact_page .line .left form .input_item input,
+.contact_page .line .left form .input_item textarea {
+    padding: 5px 9px;
+  }
+  .contact_page .line .left form .input_item textarea {
+    height: 120px;
+  }
+  .contact_page .line .left form .btn_submit {
+    padding: 5px 20px;
+    font-size: 14px;
   }
 }
 * {
