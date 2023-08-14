@@ -1,0 +1,122 @@
+$primary-color: #877afd;
+$primary2-color: #7debcd;
+
+// start sign_section
+.sign_section {
+  height: 100vh;
+  background-image: url(../images/sign-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+
+  .content {
+    width: 100%;
+
+    .head {
+      margin-bottom: 30px;
+      text-align: center;
+
+      .logo {
+        img {
+          width: 200px;
+        }
+      }
+
+      .title {
+        font-size: 35px;
+        font-weight: 600;
+      }
+    }
+
+    form {
+      padding: 50px 30px;
+      background-color: white;
+      border-radius: 10px;
+      max-width: 700px;
+      width: 400px;
+      margin: auto;
+      margin-bottom: 15px;
+
+      &.create {
+        width: 500px;
+      }
+
+      .input_item {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        label {
+          display: block;
+          margin-bottom: 8px;
+          font-weight: 600;
+        }
+
+        input {
+          outline: none;
+          border: 1px solid rgb(209, 209, 209);
+          border-radius: 5px;
+          width: 100%;
+          padding: 8px;
+        }
+      }
+
+      .btn_submit {
+        background-color: $primary-color;
+        border: none;
+        color: white;
+        padding: 6px 20px;
+        width: 100%;
+        border-radius: 50px;
+      }
+    }
+
+    .author_way {
+      text-align: center;
+      font-size: 14px;
+      color: gray !important;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sign_section {
+    .content {
+      padding: 0 10px;
+      width: 100%;
+
+      .head {
+        margin-bottom: 15px;
+        .logo {
+          img {
+            width: 185px;
+          }
+        }
+
+        .title {
+          font-size: 27px;
+        }
+      }
+
+      form {
+        width: 100% !important;
+        padding: 30px 20px;
+
+        .input_item {
+          &:not(:last-child) {
+            margin-bottom: 12px;
+          }
+
+          label {
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+// end sign_section
