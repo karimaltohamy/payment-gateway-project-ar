@@ -17,7 +17,7 @@ header .container .logo h3 span {
   color: #877afd;
 }
 header .container .logo img {
-  width: 155px;
+  width: 100px;
 }
 header .container .info {
   display: -webkit-box;
@@ -207,7 +207,7 @@ header .container .btn_menu {
     font-size: 25px;
   }
   header .container .logo img {
-    width: 150px;
+    width: 100px;
   }
   header .container .info .links {
     display: none;
@@ -562,7 +562,7 @@ footer .footer_bottom .info {
   gap: 30px;
 }
 footer .footer_bottom .info .logo img {
-  width: 160px;
+  width: 100px;
 }
 footer .footer_bottom .info .links {
   display: -webkit-box;
