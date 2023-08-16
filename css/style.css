@@ -873,6 +873,72 @@ footer .footer_bottom p {
     margin-bottom: 0;
   }
 }
+.awesome_payment_services {
+  padding: 80px 0;
+}
+.awesome_payment_services .title {
+  font-size: 35px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.awesome_payment_services .title span {
+  color: #877afd;
+}
+.awesome_payment_services .boxs {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 80px;
+}
+.awesome_payment_services .boxs .box {
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #0d0b23;
+}
+.awesome_payment_services .boxs .box img {
+  width: 90px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+.awesome_payment_services .boxs .box h4 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.awesome_payment_services .boxs .box p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .awesome_payment_services {
+    padding: 40px 0;
+  }
+  .awesome_payment_services .title {
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+  .awesome_payment_services .desc {
+    font-size: 14px;
+  }
+  .awesome_payment_services .boxs {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+  }
+  .awesome_payment_services .boxs .box {
+    padding: 25px;
+  }
+  .awesome_payment_services .boxs .box img {
+    width: 75px;
+  }
+  .awesome_payment_services .boxs .box h4 {
+    font-size: 20px;
+  }
+  .awesome_payment_services .boxs .box p {
+    font-size: 14px;
+  }
+}
 .payment_process {
   padding: 80px 0;
 }
