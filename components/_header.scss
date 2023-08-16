@@ -527,3 +527,17 @@ header {
   }
 }
 // end menu_mobile
+
+// start logo_fixed
+.logo_fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99999;
+
+  img {
+    width: 90px;
+    z-index: 100;
+  }
+}
+// end logo_fixed

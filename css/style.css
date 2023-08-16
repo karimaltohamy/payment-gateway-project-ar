@@ -495,6 +495,17 @@ header .container .btn_menu {
   margin-top: 10px;
 }
 
+.logo_fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99999;
+}
+.logo_fixed img {
+  width: 90px;
+  z-index: 100;
+}
+
 footer {
   background-color: #000115;
   color: white;
@@ -1792,6 +1803,55 @@ footer .footer_bottom p {
   .contact_page .line .left form .btn_submit {
     padding: 5px 20px;
     font-size: 14px;
+  }
+}
+.info_privacy {
+  padding: 70px 0;
+}
+.info_privacy .privacy_pupliched {
+  font-size: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 700;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #877afd;
+  margin-bottom: 3px;
+}
+.info_privacy .text {
+  margin-top: 30px;
+}
+.info_privacy .text .title {
+  font-weight: 700;
+  font-size: 27px;
+}
+.info_privacy .text .desc {
+  font-weight: 500;
+  line-height: 1.6;
+  color: gray;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  .info_privacy {
+    padding: 30px 0;
+  }
+  .info_privacy .privacy_pupliched {
+    font-size: 20px;
+    border-bottom: 2px solid #877afd;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+  .info_privacy .text {
+    margin-top: 15px;
+  }
+  .info_privacy .text .title {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  .info_privacy .text .desc {
+    font-size: 13px;
+    margin-bottom: 0;
   }
 }
 * {
