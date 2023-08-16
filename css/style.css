@@ -506,6 +506,11 @@ header .container .btn_menu {
   z-index: 100;
 }
 
+@media (max-width: 768px) {
+  .logo_fixed img {
+    width: 70px;
+  }
+}
 footer {
   background-color: #000115;
   color: white;
