@@ -15,6 +15,9 @@
     <!-- bootstarp -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <script src="js/bootstrap.js"></script>
+       <script src="js/bootstrap.js"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
      <div class="logo_fixed">
@@ -124,7 +127,9 @@
     <div class="boxs_contact">
       <div class="container">
         <div class="boxs">
-          <div class="box">
+          <div class="box" data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="300" >
             <div class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +149,9 @@
             <h4 class="title">عنوان الموقع</h4>
             <p>962 Fifth Avenue، New York، NY10022</p>
           </div>
-          <div class="box">
+          <div class="box" data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="500">
             <div class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +175,9 @@
               بذلك
             </p>
           </div>
-          <div class="box">
+          <div class="box" data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="700">
             <div class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -200,14 +209,18 @@
     <div class="contact_page">
       <div class="container">
         <div class="line">
-          <div class="left">
+          <div class="left" data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="500">
             <h3 class="title">تحدث إلى فريق قسم المبيعات والتسويق لدينا</h3>
             <p class="desc">
               تعزيز التقارب الذي يركز على العميل بشكل تعاوني محاذاة يوجهها
               العميل عبر البنى التحتية الموحدة.
             </p>
 
-            <form action="">
+            <form action="" data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="300">
               <div class="row">
                 <div class="col-12 col-md-6">
                   <div class="input_item">
@@ -250,7 +263,9 @@
               <button class="btn_submit">ارسل الرساله</button>
             </form>
           </div>
-          <div class="right">
+          <div class="right " data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="700">
             <div class="image">
               <img src="./images/contact-us-img-2.svg" alt="" />
             </div>
@@ -302,5 +317,9 @@
     <!-- end footr -->
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
