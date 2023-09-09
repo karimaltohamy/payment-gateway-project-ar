@@ -1,4 +1,4 @@
-$main-color: #5842bc;
+$main-color: #248b5f;
 
 // start login
 .sign_page {
@@ -21,7 +21,7 @@ $main-color: #5842bc;
 
     .left {
       width: 50%;
-      background-color: #6657f5;
+      background-color: $main-color;
       border-radius: 10px;
       color: white;
 
@@ -118,7 +118,7 @@ $main-color: #5842bc;
           padding: 8px 20px;
           width: 100%;
           border: none;
-          background-color: #6657f5;
+          background-color: $main-color;
           color: white;
           border-radius: 8px;
           font-weight: 600;
@@ -128,7 +128,7 @@ $main-color: #5842bc;
         .info {
           text-align: center;
           font-size: 13px;
-          color: $main-color !important;
+          color: gray !important;
           display: block;
           margin-top: 20px;
         }

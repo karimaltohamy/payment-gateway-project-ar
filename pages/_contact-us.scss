@@ -1,4 +1,4 @@
-$primary-color: #877afd;
+$primary-color: #248b5f;
 $primary2-color: #7debcd;
 
 // start boxs_contact
@@ -25,7 +25,11 @@ $primary2-color: #7debcd;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(45deg, #8785f1 0%, $primary-color 100%);
+        background: linear-gradient(
+          45deg,
+          $primary2-color 0%,
+          $primary-color 100%
+        );
         margin: auto;
         margin-bottom: 15px;
 
@@ -129,7 +133,7 @@ $primary2-color: #7debcd;
         }
 
         .btn_submit {
-          background: linear-gradient(45deg, #8785f1 0%, #5a57f6 100%);
+          background: $primary-color;
           color: white !important;
           padding: 9px 30px;
           border-radius: 3px;
